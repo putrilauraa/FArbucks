@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | FArbucks Coffee</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/FArbucks.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee.html">Coffee</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu-icon.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <hr>
+
+        <div class="register-wrap">
+            <div class="reg-desc">
+                <h1>Join Our Membership</h1>
+                <p>Join our membership and get many interesting offers such as special discounts to collecting points
+                    that can be exchanged for free products at FArbucks Coffee. If you have any questions, don't
+                    hesitate to reach out to us at:</p>
+                <a href="mailto: service@farbucks.com">service@farbucks.com</a>
+            </div>
+            <div class="reg-form">
+                <form>
+                    <label for="fullname">Full Name</label> <br>
+                    <input type="text" name="fullname" id="fullname">
+
+                    <label for="email">Email</label> <br>
+                    <input type="email" id="email">
+
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="password" id="pass" onkeyup="validatePass()">
+                    <label for="pass" id="error"></label>
+                    <br>
+                    <label for="address">Address</label> <br>
+                    <textarea name="address" id="address" cols="30" rows="5"></textarea>
+
+                    <input type="checkbox" name="agree" id="agree" value="agree">
+                    <label for="agree">I agree to the terms and conditions</label> <br> <br> <br>
+
+                    <button type="button" onclick="register()">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coffee.html">Coffee</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+
+            <p class="copyright">FArbucks Coffee @ 2022</p>
+        </div>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
